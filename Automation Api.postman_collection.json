@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "bb00a164-2576-41f4-80c8-fd542294de70",
+		"name": "Automation Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30556520"
+	},
+	"item": [
+		{
+			"name": "post html",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:15000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get by application name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:15000/api/applications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15000",
+					"path": [
+						"api",
+						"applications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get by ip or hostname",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:15000/api/ip-or-hostnames",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15000",
+					"path": [
+						"api",
+						"ip-or-hostnames"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get by username",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:15000/api/usernames",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15000",
+					"path": [
+						"api",
+						"usernames"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"applicationName\":\"Tata\",\r\n    \"ipOrHostname\":\"12.34.556.66\",\r\n    \"username\":\"tata\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:15000/api/connect",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15000",
+					"path": [
+						"api",
+						"connect"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

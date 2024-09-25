@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect to Application</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- Axios for API calls -->
+</head>
+<body>
+    <div id="popup" class="popup-container">
+        <div class="popup-content">
+            <h3>Connect to Application</h3>
+            <label for="applicationDropdown">Application Name:</label>
+            <select id="applicationDropdown">
+                <option value="" disabled selected>Select Application</option>
+            </select>
+
+            <label for="ipDropdown">IP/Hostname:</label>
+            <select id="ipDropdown">
+                <option value="" disabled selected>Select IP/Hostname</option>
+            </select>
+
+            <label for="usernameDropdown">Username:</label>
+            <select id="usernameDropdown">
+                <option value="" disabled selected>Select Username</option>
+            </select>
+
+            <button onclick="connect()">Connect</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script> <!-- Link to JS -->
+</body>
+</html>
