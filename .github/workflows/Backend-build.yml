@@ -39,7 +39,7 @@ jobs:
       - name: Push Docker Image
         uses: docker/build-push-action@v4
         with:
-          context: /com.data.automation/com.data.automation/
+          context: com.data.automation/com.data.automation
           push: true  
           tags: ykanjiya123/springass:v7 
 
