@@ -1,14 +1,15 @@
 spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/txn_master  
-    username: root                               
-    password: yash                              
-    driver-class-name: com.mysql.cj.jdbc.Driver  
-  jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect  
-    show-sql: true                               
-    hibernate:
-      ddl-auto: update                           
+    datasource:
+      url: jdbc:postgresql://ep-small-snowflake-a2g59h2p.eu-central-1.pg.koyeb.app/txt_master
+      username: koyeb-adm
+      password: 6p0EnKQiFbxs
+      driver-class-name: org.postgresql.Driver
+
+    jpa:
+      database-platform: org.hibernate.dialect.PostgreSQLDialect 
+      show-sql: true
+      hibernate:
+        ddl-auto: update
       
 server:
   port: 15000                                    
