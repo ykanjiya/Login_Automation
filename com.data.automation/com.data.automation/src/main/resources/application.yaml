@@ -1,15 +1,14 @@
 spring:
-    datasource:
-      url: jdbc:postgresql://ep-small-snowflake-a2g59h2p.eu-central-1.pg.koyeb.app/txt_master
-      username: koyeb-adm
-      password: 6p0EnKQiFbxs
-      driver-class-name: org.postgresql.Driver
+  datasource:
+    url: jdbc:postgresql://ep-crimson-fire-a5wc9slr.us-east-2.aws.neon.tech/txt_master?sslmode=require
+    username: neondb_owner
+    password: 5NhJDQOKdu8p
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
 
-    jpa:
-      database-platform: org.hibernate.dialect.PostgreSQLDialect 
-      show-sql: true
-      hibernate:
-        ddl-auto: update
-      
 server:
-  port: 15000                                    
+  port: 15000
